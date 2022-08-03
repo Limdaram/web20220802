@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <!-- text-align은 상속이 된다 (안쪽 li 전부 적용) -->
+    <ul style="text-align:center;">
+        <li>Lorem.</li>
+        <li>Obcaecati.</li>
+        <li>Commodi!</li>
+        <li>Cum!</li>
+        <li>Dolorem.</li>
+    </ul>
+
+    <hr>
+
+    <!-- border은 상속이 안된다 -->
+    <!-- ul[style]>li*5>lorem1 -->
+    <ul style="border:5px solid">
+        <li>Lorem.</li>
+        <li>Nulla.</li>
+        <li>Repellendus.</li>
+        <li>Neque.</li>
+        <li>Eum.</li>
+    </ul>
+
+</body>
+</html>
