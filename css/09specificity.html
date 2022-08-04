@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 명시도 점수가 높은것으로 선택이 된다 */
+         h1 {
+            background-color:yellow;
+         }
+         .note {
+            background-color: red;
+         }
+         .note.error {
+            background-color: blue;
+         }
+         .error {
+            text-align: center;
+         }
+         .note {
+            background-color: red;
+            text-align: right;
+         }
+         
+         /* 점수가 같으면 마지막에 있는것으로 적용이 된다
+         (위에서 부터 순서대로 내려오는 거라) */
+         /* 순서를 바꾸면 당연히 결과값도 마지막의 것으로 바뀐다 */
+         #head1 {
+            background-color: beige;
+         }
+         
+    </style>
+    
+</head>
+<body>
+    <h1>specificity 명시도</h1>
+    <p>id 선택자 : 100점</p>
+    <p>class 선택자 : 10점</p>
+    <p>element 선택자 : 1점</p>
+    
+    <hr>
+
+    <h1 id="head1" class="note error">Lorem, ipsum.</h1>
+    <h1 class="note error">Labore, soluta.</h1>
+    <h1 class="note error">Ipsum, magnam.</h1>
+    <h1 class="note error">Libero, iure.</h1>
+    <h1 class="note error">Libero, nostrum!</h1>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* child selector > */
+        /* 부모 > 자식 인 경우에만 적용 (조부모x) */
+        p {
+            text-decoration: underline;
+        }
+        .error > p {
+            background-color: yellow;
+        }
+        div > p {
+            border : 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- .note>.error>p>lorem1 -->
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem.
+            </p>
+        </div>
+    </div>
+    <!-- .error.note>p>lorem1 -->
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
