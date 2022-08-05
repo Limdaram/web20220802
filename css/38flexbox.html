@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .item {
+            font-size: 48px;
+        }
+        .item:nth-child(odd) {
+            background-color: aqua;
+        }
+        .item:nth-child(even) {
+            background-color: pink;
+        }
+        .container {
+            display: flex;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.item*5{$} -->
+    <div class="container">
+        <div class="item" style="flex: 0;">1</div>
+        <div class="item" style="flex: 1;">2</div>
+        <div class="item" style="flex: 2;">3</div>
+        <div class="item" style="flex: 1;">4</div>
+        <div class="item" style="flex: 0;">5</div>
+        <!-- 0의 값은 고정(기본) 나머지는 비율에 맞춰 나누어 갖는다 -->
+        <!-- 기본:1:2:1:기본 -->
+        <!-- 화면 크기를 움직여도 0의 값은 고정, 나머지는 비율에 맞춰 변경 -->
+    </div>
+</body>
+</html>
