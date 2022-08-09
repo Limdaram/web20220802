@@ -10,19 +10,44 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        let a; // 선언
-        a = 5; // 대입
+        let a;
+        a = 3;
 
-        let b = 3; // 선언 대입 동시에 하기
+        console.log(a);
 
-        let c, d, e; // 여러 변수 선언
-        c = 1;
-        d = 2;
-        e = 3;
+        var b;
+        b = 3;
 
-        let f = 3, g = 4, h = 5; // 여러 변수 선언과 값 대입
+        console.log(b);
 
-        console.log(a, b, c, d, e, f, g, h);
+        // let과 var의 차이
+        // let : 다시 선언할 수 없음
+        // var : 다시 선언할 수 있음
+
+        var c;
+        c = 10;
+        var c;
+
+        console.log(c);
+
+        // let : 블록 영역 (block scope)
+        // var : 함수 영역 (function scope)
+
+        {
+            let d;
+            d = 99;
+            console.log(d);
+        }
+
+        // console.log(d); // 이렇게 블록 밖에서는 사용할 수가 없다
+
+        {
+            var e;
+            e = 999;
+            console.log(e);
+        }
+
+        console.log(e); //var 는 가능
 
     </script>
 </body>

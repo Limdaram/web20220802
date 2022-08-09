@@ -10,19 +10,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        let a; // 선언
-        a = 5; // 대입
+        // 할당(대입)연산자 (assignment)
 
-        let b = 3; // 선언 대입 동시에 하기
+        let a = 3;
+        console.log(a); // 3
 
-        let c, d, e; // 여러 변수 선언
-        c = 1;
-        d = 2;
-        e = 3;
+        a += 5; // 양변을 더한 것을 왼쪽변에 할당
+        console.log(a); // 8
 
-        let f = 3, g = 4, h = 5; // 여러 변수 선언과 값 대입
+        a -= 2; // 양변을 뺀 것을 왼쪽에 할당
+        console.log(a); // 6
 
-        console.log(a, b, c, d, e, f, g, h);
+        a *= 3; // 양변을 곱한 결과를 왼쪽에 할당
+        console.log(a); // 18
+
+        a /= 2; // 양변을 나눈 결과를 왼쪽에 할당
+        console.log(a); // 9
+
+        let b = "3"; // string
+        b += 5; // number
+        console.log(b); // 35 라는 string
+
 
     </script>
 </body>

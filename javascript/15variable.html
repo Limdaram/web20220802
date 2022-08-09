@@ -10,19 +10,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        let a; // 선언
-        a = 5; // 대입
+        let a;
+        a = 3;
 
-        let b = 3; // 선언 대입 동시에 하기
+        console.log(a);
+        console.log(a + 10);
 
-        let c, d, e; // 여러 변수 선언
-        c = 1;
-        d = 2;
-        e = 3;
 
-        let f = 3, g = 4, h = 5; // 여러 변수 선언과 값 대입
+        // 상수 (constant) : 변하지 않는 값
+        const b = 7; 
+        // 상수는 선언과 동시에 값 대입
+        // 값을 변경할 수 없음 (다른 값 대입 안됨)
+        // b = 5; // 안됨
 
-        console.log(a, b, c, d, e, f, g, h);
+        console.log(b);
 
     </script>
 </body>
