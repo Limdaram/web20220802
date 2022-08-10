@@ -10,26 +10,31 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        switch (4) {
-            case 3:
-                console.log("3 입력됨");            
-                // break;
-            case 4:
-                console.log("4 입력됨");
-                // break;
-            case 5:
-                console.log("5 입력됨");
-                break;
-    
-            default:
-                console.log("3,4,5 아님");
-                break;
+        for (let i = 0; i < 3; i++) {
+            console.log("코드1", i);
+            for (let j = 0; j < 3; j++) {
+                console.log("코드2...", j);
+            }
         }
 
-        // break 가 없다면 (true일때) 출력과 동시에 그 다음 것도 출력 (break 전까지)
-        // if 문법은 동시에 출력될 수 없지만 switch는 동시에 출력될 수 있다
+        console.log("문제");
+        console.log(1, 1);
+        console.log(1, 2);
+        console.log(1, 3);
+        console.log(2, 1);
+        console.log(2, 2);
+        console.log(2, 3);
+        console.log(3, 1);
+        console.log(3, 2);
+        console.log(3, 3);
 
-        console.log("다음");
+        console.log("중첩 for문 으로 작성");
+        for (let i = 1; i <= 3; i++) {
+            for (let j = 1; j <= 3; j++){
+                console.log("(" + i + "," + j + ")");
+            }
+        }
+
     </script>
 </body>
 </html>

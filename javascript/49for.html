@@ -10,26 +10,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        switch (4) {
-            case 3:
-                console.log("3 입력됨");            
-                // break;
-            case 4:
-                console.log("4 입력됨");
-                // break;
-            case 5:
-                console.log("5 입력됨");
-                break;
-    
-            default:
-                console.log("3,4,5 아님");
-                break;
+        let dan = Number(prompt("구구단 몇단?"));
+
+        
+
+        if ((dan >= 2) && (dan <= 9)) {
+            console.log("구구단 " + dan + "단 출력");
+            for (let i=1; i<=9; i++) {
+            console.log(dan + " x " + i + " = " + dan*i);
+        }
+        }
+        else {
+            console.log("2 부터 9 까지의 숫자를 쓰세요");
         }
 
-        // break 가 없다면 (true일때) 출력과 동시에 그 다음 것도 출력 (break 전까지)
-        // if 문법은 동시에 출력될 수 없지만 switch는 동시에 출력될 수 있다
-
-        console.log("다음");
+        
+        // string 연결은 +
     </script>
 </body>
 </html>

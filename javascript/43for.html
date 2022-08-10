@@ -10,26 +10,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        switch (4) {
-            case 3:
-                console.log("3 입력됨");            
-                // break;
-            case 4:
-                console.log("4 입력됨");
-                // break;
-            case 5:
-                console.log("5 입력됨");
-                break;
-    
-            default:
-                console.log("3,4,5 아님");
-                break;
+        // for : 코드 블럭을 반복 실행하기 위한 키워드
+
+        console.log("반복할 코드", 1);
+        console.log("반복할 코드", 2);
+        console.log("반복할 코드", 3);
+        console.log("반복할 코드", 4);
+        console.log("반복할 코드", 5);
+        console.log("반복할 코드", 6);
+        console.log("반복할 코드", 7);
+
+        for (
+            let i=1; // 1번
+            i<8; // 2번
+            i++ // 3번
+            ) { //코드블럭
+            console.log("반복할 코드", i);
         }
+        // 1번 실행
+        // 2번 실행이 true 일때는 코드블럭 >> 3번실행 >> 2번실행 (반복) 
+        // false 일때는 다음 실행 흐름(끝)
 
-        // break 가 없다면 (true일때) 출력과 동시에 그 다음 것도 출력 (break 전까지)
-        // if 문법은 동시에 출력될 수 없지만 switch는 동시에 출력될 수 있다
-
-        console.log("다음");
     </script>
 </body>
 </html>
