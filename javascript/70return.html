@@ -10,28 +10,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-        let scores = [90, 70, 100, 75, 80, 75, 80, 95];
+        let a = getDouble(3);
+        let b = getDouble(5);
+        let c = getDouble("hi");
 
-        let sum = 0;
-        for (let i = 0; i < scores.length; i++) {
-            sum = sum + scores[i];
+        function getDouble(x) {
+            return (x + x);
         }
-        console.log("합 :", sum);
-        console.log("평균 :", sum/scores.length);
 
-        sum=0;
-        let x = 0;
-        for (let i=0; i<scores.length; i++) {
-            if (scores[i]>=80) {
-                sum += scores[i];
-                x++;
-            }
-        }
-        console.log("80점 이상 값만 더하기 :", sum);
-        console.log(sum/x);
-
-        // 80점 이상 값들만의 평균을 구하기 위해서는 갯수가 필요한데
-        // 갯수를 구하는 변수를 새로 만들어야 한다 (x)
+        console.log(a);
+        console.log(b);
+        console.log(c);
 
     </script>
 </body>
